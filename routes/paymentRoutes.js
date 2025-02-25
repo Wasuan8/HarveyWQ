@@ -89,6 +89,7 @@ router.post("/create-payment", async (req, res) => {
       number,
       email,
       category,
+      amount, 
       paymentMethod,
       paymentRefId: confirmedPaymentIntent.id,
       paymentDate: new Date(),
